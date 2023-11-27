@@ -7,7 +7,7 @@ class SampleAccellorModuleViewManager: RCTViewManager {
   @objc
   func showScreen(_ token: NSString){    
     DispatchQueue.main.async {
-      if let viewController = SampleFrameworkManager.instantiateViewController() {
+      if let viewController = SampleAccelloriOSFrameworkManager.instantiateViewController() {
           let navigationController = UINavigationController(rootViewController: viewController)
           navigationController.modalPresentationStyle = .fullScreen
           // Use the most appropriate window based on your application's architecture
